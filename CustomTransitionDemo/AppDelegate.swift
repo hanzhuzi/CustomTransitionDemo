@@ -9,6 +9,7 @@
 /***
  * 自定义UIViewController转场
  * 目前有一个问题尚未解决：InteractionTransition时TabBar不同步
+ * 解决方案：自定义导航和TabBar，躲避系统NavigationBar和TabBar带来的问题。
  **/
 
 import UIKit

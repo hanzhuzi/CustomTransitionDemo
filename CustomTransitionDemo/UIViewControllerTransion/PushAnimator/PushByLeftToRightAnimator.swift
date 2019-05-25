@@ -71,7 +71,7 @@ class PushByLeftToRightAnimator: NSObject, UIViewControllerAnimatedTransitioning
         basicAnima.timingFunction = CAMediaTimingFunction.init(name: CAMediaTimingFunctionName.easeInEaseOut)
         fromView.layer.add(basicAnima, forKey: "shadowOpacityAnimation")
         
-        UIView.animate(withDuration: duration, delay: 0, options: UIView.AnimationOptions.curveEaseInOut, animations: {
+        UIView.animate(withDuration: duration, animations: {
             fromView.frame = CGRect(x: initalFrame.size.width, y: 0, width: initalFrame.size.width, height: initalFrame.size.height)
             toView.frame = CGRect(x: 0, y: 0, width: initalFrame.size.width, height: initalFrame.size.height)
             maskView.frame = CGRect(x: 0, y: 0, width: initalFrame.size.width, height: initalFrame.size.height)
